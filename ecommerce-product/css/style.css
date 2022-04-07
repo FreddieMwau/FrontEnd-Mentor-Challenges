@@ -1,0 +1,205 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans';
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+
+}
+
+.mobile-nav{
+    display: none;
+}
+
+.nav-bar{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    padding:  0;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid hsl(220, 14%, 75%);
+}
+.nav-bar .brand-name{
+    width: 20%;
+    height: 100%;
+    font-weight: 700;
+    font-size: 30px;
+    margin-top: 35px;
+    margin-left: 15px;
+}
+.nav-links{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-links a{
+    text-decoration: none;
+    margin: 0 10px;
+    color: hsl(220, 14%, 75%);
+    cursor: pointer;
+    padding: 30px 0;
+}
+
+.nav-links a:hover{
+    /* color: hsl(26, 100%, 55%); */
+    border-bottom: 4px hsl(26, 100%, 55%) solid;
+}
+
+.nav-bar .icons{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.nav-bar .avatar-icon{
+    width: 40px;
+    height: 40px;
+    margin-left: 15px;
+}
+
+.row{
+    padding: 70px 40px;
+    display: flex;
+}
+
+.col{
+    width: 50%;
+}
+
+.col .big-img img{
+    border-radius: 10px;
+}
+
+
+.col .big-img .previous,
+.col .big-img .next{
+    display: none;
+}
+
+.col .small-imgs{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.col .small-imgs img{
+    width: 100px;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: .2s linear;
+    cursor: pointer;
+}
+
+.col .small-imgs img:hover{
+    transform: scale(0.6);
+}
+
+
+.col2{
+    width: 50%;
+    padding: 30px 70px;
+}
+
+.col2 h4{
+    font-weight: 700;
+    text-transform: uppercase;
+    color: hsl(26, 100%, 55%);
+    font-size: 16px;
+}
+
+.col2 h5{
+    font-weight: 700;
+    color: black;
+    font-size: 45px;
+    line-height: 45px;
+    margin-top: 20px;
+}
+.col2 .desc{
+    color: hsl(220, 14%, 75%);
+    font-size: 16px;
+    line-height: 25px;
+    margin-top: 20px;
+}
+
+.col2 .prices{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.col2 .prices .price{
+    color: black;
+    font-weight: 700;
+    align-items: center;
+    display: flex;
+    font-size: 30px;
+}
+
+.col2 .prices .price span{
+    color: hsl(26, 100%, 55%);
+    cursor: pointer;
+    margin-left: 15px;
+    padding: 3px;
+    border-radius: 10px;
+    justify-content: center;
+    background: hsl(25, 100%, 94%);
+    font-size: 16px;
+}
+
+.col2 .prices .last-price{
+    color: hsl(220, 14%, 75%);
+    text-decoration: line-through;
+    font-size: 16px;
+    font-weight: 400s;
+}
+
+.quantity-cart {
+    margin: 50px 0;
+    padding: 0;
+    display: flex;
+    height: 60px;
+}
+
+.quantity-cart .quantity {
+    display: flex;
+    padding: 0px 15px;
+    align-items: center;
+    width: 120px;
+    margin-right: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: hsl(231, 26%, 95%);
+    border-radius: 10px;
+    justify-content: space-around;
+}
+
+.quantity-cart .quantity span {
+    cursor: pointer;
+    color: hsl(26, 100%, 55%);
+}
+
+.quantity-cart button {
+    border: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    font-weight: 700;
+    background-color: hsl(26, 100%, 55%);
+    border-radius: 10px;
+    color: hsl(0, 0%, 100%);
+    width: 100%;
+}
+
+.quantity-cart button span img.cart-icons {
+    margin-right: 10px;
+}
