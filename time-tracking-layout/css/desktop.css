@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik';
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+[class ^= "card-"]{
+    display: grid;
+    border-radius: 20px;
+    position: relative;
+}
+
+body{
+    height: 100vh;
+    background: hsl(226, 43%, 10%);
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    margin: 30px auto;
+    padding: 20px auto;
+}
+
+.tracking-design{
+    height: 70vh;
+    width: 70vw;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-areas: 
+    "pr pr  wo wo  pl pl  st st"
+    "pr pr  wo wo  pl pl  st st"
+    "pr pr  ex ex  so so  sc sc"
+    "pr pr  ex ex  so so  sc sc";
+}
+
+/* Profile */
+.tracking-design .card-profile{
+    grid-area: pr;
+    background-color: hsl(235, 46%, 20%);
+}
+
+/* Play */
+
+.tracking-design .card-play {
+    grid-area: pl;
+    background-color: hsl(195, 74%, 62%);
+}
+
+/* Study */
+.tracking-design .card-study {
+    grid-area: st;
+    background-color: hsl(348, 100%, 68%);
+}
+
+/* Exercise */
+
+.tracking-design .card-exercise {
+    grid-area: ex;
+    background-color: hsl(145, 58%, 55%);
+}
+
+/* Social */
+.tracking-design .card-social {
+    grid-area: so;
+    background-color: hsl(264, 64%, 52%);
+}
+
+/* Self care */
+.tracking-design .card-self-care {
+    grid-area: sc;
+    background-color: hsl(43, 84%, 65%);
+}
+
+/* Commons */
+.tracking-design .card-profile .profile {
+    background-color: hsl(246, 80%, 60%);
+    width: 100%;
+    height: 70%;
+    border-radius: 20px;
+}
+
+.tracking-design .card-profile .profile img {
+    border: 2px solid white;
+    border-radius: 50%;
+    margin-top: 15px;
+    margin-left: 10px;
+    height: 55px;
+    width: 55px;
+}
+
+.tracking-design .card-profile .profile p {
+    font-size: 12px;
+    font-weight: 300;
+    color: white;
+    margin-left: 10px;
+    margin-top: 35px;
+}
+
+.tracking-design .card-profile .profile h3 {
+    font-size: 25px;
+    font-weight: 400;
+    color: white;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.tracking-design .card-profile .duration {
+    height: 30%;
+    position: absolute;
+    bottom: 0;
+}
+
+.tracking-design .card-profile .duration p {
+    font-size: 13px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: hsl(246, 80%, 60%);
+}
+
+.tracking-design .card-profile .duration p.weekly {
+    color: white;
+    font-weight: 500;
+}
+
+/* Work */
+
+.tracking-design .card-work {
+    grid-area: wo;
+    background-color: hsl(15, 100%, 70%);
+    position: relative;
+}
+
+.tracking-design .card-work .work-img,
+.tracking-design .card-play .play-img,
+.tracking-design .card-study .study-img,
+.tracking-design .card-exercise .exercise-img,
+.tracking-design .card-social .social-img,
+.tracking-design .card-self-care .self-care-img {
+    height: 20%;
+}
+
+.tracking-design .card-work .work-img img,
+.tracking-design .card-play .play-img img,
+.tracking-design .card-study .study-img img,
+.tracking-design .card-exercise .exercise-img img,
+.tracking-design .card-social .social-img img,
+.tracking-design .card-self-care .self-care-img img {
+    height: 45px;
+    width: 45px;
+    position: absolute;
+    right: 10px;
+    top: 0;
+    bottom: 5px;
+}
+
+.tracking-design .card-work .work,
+.tracking-design .card-play .play,
+.tracking-design .card-study .study,
+.tracking-design .card-exercise .exercise,
+.tracking-design .card-social .social,
+.tracking-design .card-self-care .self-care {
+    height: 80%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    border-radius: 10px;
+    background-color: hsl(235, 46%, 20%);
+}
+
+.tracking-design .card-work .work .wrk,
+.tracking-design .card-play .play .ply,
+.tracking-design .card-study .study .stdy,
+.tracking-design .card-exercise .exercise .exercse,
+.tracking-design .card-social .social .scl,
+.tracking-design .card-self-care .self-care .slf-care {
+    color: white;
+    font-size: 14px;
+    margin-top: 15px;
+    margin-left: 25px;
+}
+
+.tracking-design .card-work .work img,
+.tracking-design .card-play .play img,
+.tracking-design .card-study .study img,
+.tracking-design .card-exercise .exercise img,
+.tracking-design .card-social .social img,
+.tracking-design .card-self-care .self-care img {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    height: 5px;
+    width: 15px;
+}
+
+.tracking-design .card-work .work .hrs,
+.tracking-design .card-play .play .hrs,
+.tracking-design .card-study .study .hrs,
+.tracking-design .card-exercise .exercise .hrs,
+.tracking-design .card-social .social .hrs,
+.tracking-design .card-self-care .self-care .hrs {
+    color: white;
+    font-size: 30px;
+    margin-top: 25px;
+    font-size: 500;
+    margin-left: 25px;
+}
+
+.tracking-design .card-work .work .week,
+.tracking-design .card-play .play .week,
+.tracking-design .card-study .study .week,
+.tracking-design .card-exercise .exercise .week,
+.tracking-design .card-social .social .week,
+.tracking-design .card-self-care .self-care .week {
+    color: hsl(246, 80%, 60%);
+    font-size: 10px;
+    margin-top: 10px;
+    margin-left: 25px;
+}
+
+

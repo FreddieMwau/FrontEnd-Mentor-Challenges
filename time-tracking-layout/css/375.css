@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body{
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100%;
+    display: flex;
+    box-sizing: border-box;
+    padding: 40px 0;
+}
+
+.container .tracking-design{
+    width: 80vw;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, 160px);
+    grid-template-areas: 
+    "pr"
+    "wo"
+    "pl"
+    "st"
+    "ex"
+    "so"
+    "sc";
+    overflow-y: scroll;
+}
+
+.container .tracking-design .card-profile{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.container .tracking-design .card-profile .profile{
+    display: flex;
+    flex-direction: row;
+}
+
+.container .tracking-design .card-profile .profile img{
+    margin-top: 30px;
+    width: 50px;
+    height: 50px;
+}
+
+.container .tracking-design .card-profile .profile h3{
+    font-size: 18px;
+}
+
+.container .tracking-design .card-profile .duration{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    height: 30px;
+}
+
+.container .tracking-design .card-work .work p .hrs,
+.container .tracking-design .card-play .play p .hrs,
+.container .tracking-design .card-study .study p .hrs,
+.container .tracking-design .card-exercise .exercise p .hrs,
+.container .tracking-design .card-social .social p .hrs,
+.container .tracking-design .card-self-care .self-care p .hrs{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container .tracking-design .card-work .work p .week,
+.container .tracking-design .card-play .play p .week,
+.container .tracking-design .card-study .study p .week,
+.container .tracking-design .card-exercise .exercise p .week,
+.container .tracking-design .card-social .social p .week,
+.container .tracking-design .card-self-care .self-care p .week{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
