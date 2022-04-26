@@ -794,17 +794,11 @@
 
 .container .company-details{
     background-color: white;
-    /* position: relative; */
+    margin-top: 15rem;
 }
 
 .container .company-details .company{
-    width: 100%;
-    /* position: absolute; */
-    /* right: auto; */
-    /* left: auto; */
-    top: 30px;
-    bottom: 20px;
-    /* display: inline-flex; */
+    display: flex;
     justify-content: space-evenly;
 }
 
@@ -822,9 +816,39 @@
 .container .company-details .company .company-info p,
 .container .company-details .company .legal p,
 .container .company-details .company .features p,
-.container .company-details .company .resources p{
+.container .company-details .company .resources p,
+.container .company-details .company .get-in-touch p{
     margin:  10px 0;
     color: gray;
     font-size: 14px;
-    font-weight: 300;
+    font-weight: bold;
+}
+
+.container .company-details .company .get-in-touch p ion-icon{
+    color: #23a6f0;
+    margin-right: 10px;
+}
+
+
+.container .footer{
+    display: flex;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    margin-left: 9rem;
+    margin-right: 9rem;
+    justify-content: space-between;
+}
+
+.container .footer p{
+    margin: 10px 0;
+    color: gray;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.container .footer .icons ion-icon{
+    color: #23a6f0;
+    width: 20px;
+    height: 20px;
+    margin: 10px 5px;
 }
