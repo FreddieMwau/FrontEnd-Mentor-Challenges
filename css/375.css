@@ -261,7 +261,6 @@
 }
 
 .container .appointment-card .agency{
-    border: 2px solid firebrick;
     display: flex;
     width: 23rem;
     flex-wrap: wrap;
@@ -270,13 +269,75 @@
 
 .container .appointment-card .agency .agency-desc{
     padding: 15px;
-    border: 2px solid orange;
     width: 25rem;
 }
 .container .appointment-card .agency .agency-desc h4{
     text-align: center;
     font-size: 32px;
     letter-spacing: 1px;
-    word-spacing: 5px;
+    word-spacing: 2px;
     flex-wrap: wrap;
+}
+
+.container .appointment-card .agency .agency-desc p{
+    text-align: left;
+    width: 10rem;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+.container .appointment-card .agency .contact-us{
+    width: 10rem;
+    margin: 20px 40px;
+}
+
+.container .company-details{
+    margin-top: 25rem;
+    margin-left: 40px;
+    display: flex;
+    width: 15rem;
+}
+
+.container .company-details .company{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 10px auto;
+}
+
+.container .footer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 20rem;
+    margin-left: 2rem;
+}
+
+.container .footer p{
+    margin-left: 30px;
+    font-size: 14px;
+    width: 10rem;
+}
+
+.container .footer .icons{
+    margin: 0 25px;
+    display: flex;
+    /* justify-content: ; */
+}
+
+.container .footer .icons ion-icon.facebook{
+    color: blue;
+}
+
+.container .footer .icons ion-icon.twitter{
+    color: #23a6f0;
+}
+
+.container .footer .icons ion-icon.instagram{
+    color: palevioletred;
+}
+
+.container .footer .icons ion-icon.youtube{
+    display: block;
+    color: red;
 }
